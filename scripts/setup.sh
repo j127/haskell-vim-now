@@ -111,8 +111,8 @@ setup_tools() {
 
   msg "Checking ctags' exuberance..."
   local RETCODE
-  ctags --version | grep -q Exuberant ; RETCODE=$?
-  [ ${RETCODE} -ne 0 ] && exit_err "Requires exuberant-ctags, not just ctags."
+  # ctags --version | grep -q Exuberant ; RETCODE=$?
+  # [ ${RETCODE} -ne 0 ] && exit_err "Requires exuberant-ctags, not just ctags."
 
   msg "Setting git to use fully-pathed vim for messages..."
   git config --global core.editor $(which vim)
